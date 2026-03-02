@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Compass UI Clone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<div class="navbar">
+    <div class="logo">MyRealityFuture</div>
+    <div class="nav-links">
+        <a href="#">Buy</a>
+        <a href="#">Rent</a>
+        <a href="#">Sell</a>
+        <a href="#">Agents</a>
+        <a href="#">Sign In</a>
+    </div>
+</div>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Find your place</h1>
+
+        <div class="search-container">
+            <div class="tabs">
+                <button class="tab active">Buy</button>
+                <button class="tab">Rent</button>
+                <button class="tab">Sell</button>
+            </div>
+
+            <div class="search-box">
+                <input type="text" placeholder="City, Neighborhood, Address, School, ZIP, Agent, MLS #">
+                <button>🔍</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="explore">
+  <div class="explore-header">
+    <h2>Explore homes on Trulia</h2>
+    <p>
+      Take a deep dive and browse homes for sale, original neighborhood photos,
+      resident reviews and local insights to find what is right for you.
+    </p>
+  </div>
+
+  <div class="scroll-wrapper">
+
+    <button class="scroll-btn left" onclick="scrollExplore(-500)">‹</button>
+
+    <div class="explore-scroll" id="exploreScroll">
+
+      <div class="card city">
+        <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae">
+        <div class="overlay">
+          <h3>Scottsdale, AZ</h3>
+          <button>View Homes →</button>
+        </div>
+      </div>
+
+      <div class="card city tall">
+        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156">
+        <div class="overlay">
+          <h3>Oakland, CA</h3>
+          <button>View Homes →</button>
+        </div>
+      </div>
+
+      <div class="card city">
+        <img src="https://images.unsplash.com/photo-1599423300746-b62533397364">
+        <div class="overlay">
+          <h3>Sandy Springs, GA</h3>
+          <button>View Homes →</button>
+        </div>
+      </div>
+
+      <div class="card city">
+        <img src="https://images.unsplash.com/photo-1464146072230-91cabc968266">
+        <div class="overlay">
+          <h3>Carlsbad, CA</h3>
+          <button>View Homes →</button>
+        </div>
+      </div>
+
+      <div class="card city tall">
+        <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994">
+        <div class="overlay">
+          <h3>Philadelphia, PA</h3>
+          <button>View Homes →</button>
+        </div>
+      </div>
+
+      <div class="card review">
+        <h4>Brianne</h4>
+        <span>Chicago Resident</span>
+        <p>
+          A good mix of young adults, good night life as well as
+          families and family friendly activities.
+        </p>
+      </div>
+
+      <div class="card city">
+        <img src="https://images.unsplash.com/photo-1449844908441-8829872d2607">
+        <div class="overlay">
+          <h3>Boston, MA</h3>
+          <button>View Homes →</button>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="scroll-btn right" onclick="scrollExplore(500)">›</button>
+
+  </div>
+</section>
+<!-- ================= HELP SECTION ================= -->
+<section class="help">
+  <div class="help-header">
+    <h2>See how My Reality Future can help</h2>
+  </div>
+
+  <div class="help-container">
+
+    <!-- CARD 1 -->
+    <div class="help-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/609/609803.png" alt="">
+      <h3>Buy a home</h3>
+      <p>
+        With over 1 million+ homes for sale available on the website,
+        Trulia can match you with a house you will want to call home.
+      </p>
+      <button>Find a home</button>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="help-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/69/69524.png" alt="">
+      <h3>Rent an apartment</h3>
+      <p>
+        With 35+ filters and custom keyword search, Trulia can help you
+        easily find a home or apartment for rent that you'll love.
+      </p>
+      <button>Find a rental</button>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="help-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/535/535239.png" alt="">
+      <h3>See neighborhoods</h3>
+      <p>
+        With more neighborhood insights than any other real estate website,
+        we've captured the color and diversity of communities.
+      </p>
+      <button>Learn more</button>
+    </div>
+
+  </div>
+</section>
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
